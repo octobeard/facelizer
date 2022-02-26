@@ -1,14 +1,8 @@
 import processing.core.PApplet
+import java.awt.Color
 
-fun main() = PApplet.main(Hello::class.java.name)
+fun main() = PApplet.main(Facelizer::class.java.name)
 
-class Hello : PApplet() {
-    override fun settings() {
-        size(500, 500)
-    }
-    override fun setup() {
-    }
-    override fun draw() {
-        circle(width/2f, height/2f, 100f)
-    }
+fun Int.rgb() : Int {
+    return Color(this).rgb
 }
