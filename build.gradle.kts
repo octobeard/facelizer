@@ -29,20 +29,6 @@ dependencies {
     implementation(platform("org.lwjgl:lwjgl-bom:$lwjglVersion"))
     implementation(fileTree(mapOf("dir" to "libs/lwjgl-release-3.3.1", "include" to listOf("*.jar"))))
 
-    implementation("org.lwjgl:lwjgl")
-    implementation("org.lwjgl:lwjgl-assimp")
-    implementation("org.lwjgl:lwjgl-egl")
-    implementation("org.lwjgl:lwjgl-glfw")
-    implementation("org.lwjgl:lwjgl-opengl")
-    implementation("org.lwjgl:lwjgl-opengles")
-    implementation("org.lwjgl:lwjgl-stb")
-    runtimeOnly("org.lwjgl:lwjgl::$osNatives")
-    runtimeOnly("org.lwjgl:lwjgl-assimp::$osNatives")
-    runtimeOnly("org.lwjgl:lwjgl-glfw::$osNatives")
-    runtimeOnly("org.lwjgl:lwjgl-opengl::$osNatives")
-    runtimeOnly("org.lwjgl:lwjgl-opengles::$osNatives")
-    runtimeOnly("org.lwjgl:lwjgl-stb::$osNatives")
-
     // import HYPE jar in libs directory 2.x
     implementation(fileTree(mapOf("dir" to "libs/hype", "include" to listOf("*.jar"))))
     // import minim library 2.2.2
